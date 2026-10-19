@@ -13,7 +13,6 @@ calButton.addEventListener('click', () => {
 })
 
 function divideButNotDivide(dividendNum, divisorNum) {
-    // Basic condition
     if (divisorNum == 0 || (divisorNum < 0 || dividendNum < 0)) return false;
     if (dividendNum == 0) return '0';
     if (divisorNum == 1) return dividendNum;
@@ -22,8 +21,6 @@ function divideButNotDivide(dividendNum, divisorNum) {
     let quotient = new Array(1).fill(0);
     let index = 0;
     let result = '';
-
-    // ERROR-ing
     let count = 0;
     while (true) {
         count += 1;
